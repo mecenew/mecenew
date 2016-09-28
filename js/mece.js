@@ -1,5 +1,5 @@
 function flashingHidden(fromDiv, toDiv){
-    console.log($('.' +fromDiv)[0]);
+    // console.log($('.' +fromDiv)[0]);
     $('#' +fromDiv)[0].className= ('animated bounceOutLeft');
     $('#' +fromDiv)[0].style.display='none';
     $('#' +toDiv)[0].style.display='block';
@@ -21,7 +21,8 @@ $('#'+elem).css('display','block');
 }
 
 function tik() {
-    if ($('#fPrice')[0].value>0 && $('#fMarketing')[0].value>0 && $('#fDepresation')[0].value>0 && $('#fQuality')[0].value>0){ 
+    // console.log(validInput());
+    if (validInput()){ 
     hideglobal();
     playerList[gameParameter.playerNow - 1].price = $('#fPrice')[0].value;
     playerList[gameParameter.playerNow - 1].marketing = $('#fMarketing')[0].value;
@@ -36,6 +37,9 @@ function tik() {
 }
 
 function setFormValue() {
+     // console.log($('#fPrice')[0].value);
+     // console.log(playerList[gameParameter.playerNow - 1]);
+
     $('#fPrice')[0].value = playerList[gameParameter.playerNow - 1].price;
     $('#fMarketing')[0].value = playerList[gameParameter.playerNow - 1].marketing;
     $('#fDepresation')[0].value = playerList[gameParameter.playerNow - 1].deprecation;
@@ -44,12 +48,12 @@ function setFormValue() {
 
 function tak() {
     unHideglobal();
-       console.log(playerList[gameParameter.playerNow - 1]);
+       // console.log(playerList[gameParameter.playerNow - 1]);
     for (var key in playerList[gameParameter.playerNow - 1] ) {
         if(!$.isNumeric(playerList[gameParameter.playerNow - 1][key])){
             if (typeof playerList[gameParameter.playerNow - 1][key] != 'string') {
                 playerList[gameParameter.playerNow - 1][key] = 0;
-            console.log(playerList[gameParameter.playerNow - 1][key]);
+            // console.log(playerList[gameParameter.playerNow - 1][key]);
             }
             
         }
@@ -108,7 +112,7 @@ function tak() {
 
 window.onload = zeroPointFix;
 function zeroPointFix(){
-        console.log(playerList.length);
+        // console.log(playerList.length);
     for (var i = 0; i < playerList.length; i++) {
         tik();
         tak();

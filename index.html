@@ -8,24 +8,24 @@
     <meta ut>
     <script src="lib.js"></script>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--  Optional theme -->
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <!-- Latest compiled and minified JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <!--  Optional theme -->
     <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
     <!-- Latest compiled and minified JavaScript -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/mece.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="shortcut icon" href="../favicon.ico">
+    <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <script src="js/modernizr.custom.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
     <!-- <script type="text/javascript">
     $(document).ready(function() {
         $('#tab-container').easytabs();
@@ -34,58 +34,55 @@
 </head>
 
 <body>
-                            <div id="hidenTik" onclick="tak()">
-                                <p>Click to continue</p>
-                            </div>
-                            <div class="container">
-                            	 <div id="loadingScreen" onclick="flashingHidden('loadingScreen','menuScreen');">
-                                <img class="animated ifinite bounceInDown" src="src/img/logo.png" alt="logo">
-                                <p id="skipButtonPre">Tap to continue</p>
-                            </div>
-                            <div id="menuScreen">
-                                <!-- img dubai  -->
-                                <div class="container">
-                                    <div id="menuTop">
-                                        <img src="src/img/MenuImg.jpg" class='img-responsive center-block' alt="dubai">
-                                        <h2>Economics Tycoon</h2>
-                                    </div>
-                                </div>
-                                <div class="container-fluid">
-                                    <div id="bodyMenu">
-                                        <div class="row">
-                                            <!-- <button type='button' class="btn btn-success col-md-6 col-lg-5 col-xs-10" >Singeplyer</button> -->
-                                            <button type='button' id="multiButton " class="btn  btn-primary col-md-6 col-lg-6 col-xs-12 " onclick="flashingHidden('menuScreen','global');unHidden('noneContainer')">Multiplayer</button>
-                                            <button type='button' id=" helpButton" class=" btn btn-primary col-md-6 col-lg-6 col-xs-12  ">HELP</button>
-                                            <!-- <button type='button' class="btn btn-success col-md-6 col-lg-5 col-xs-10   ">Setting</button> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            <div id="noneContainer">
-                            	
-    <div id="st-container" class="st-container">
-
-        <nav class="st-menu st-effect-1" id="menu-1">
-            <h2 class="icon icon-pen">
+    <div id="hidenTik" onclick="tak()">
+        <p>Click to continue</p>
+    </div>
+    <div class="container">
+        <div id="loadingScreen" onclick="flashingHidden('loadingScreen','menuScreen');">
+            <img class="animated ifinite bounceInDown" src="src/img/logo.png" alt="logo">
+            <p id="skipButtonPre">Tap to continue</p>
+        </div>
+        <div id="menuScreen">
+            <!-- img dubai  -->
+            <div class="container">
+                <div id="menuTop">
+                    <img src="src/img/MenuImg.jpg" class='img-responsive center-block' alt="dubai">
+                    <h2>Economics Tycoon</h2>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div id="bodyMenu">
+                    <div class="row">
+                        <!-- <button type='button' class="btn btn-success col-md-6 col-lg-5 col-xs-10" >Singeplyer</button> -->
+                        <button type='button' id="multiButton " class="btn  btn-primary col-md-6 col-lg-6 col-xs-12 " onclick="flashingHidden('menuScreen','global');unHidden('noneContainer')">Multiplayer</button>
+                        <button type='button' id=" helpButton" class=" btn btn-primary col-md-6 col-lg-6 col-xs-12  ">HELP</button>
+                        <!-- <button type='button' class="btn btn-success col-md-6 col-lg-5 col-xs-10   ">Setting</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="noneContainer">
+        <div id="st-container" class="st-container">
+            <nav class="st-menu st-effect-1" id="menu-1">
+                <h2 class="icon icon-pen">
 				 <strong id="name">1</strong>
             </h2>
-            <ul>
-                <li onclick="slideShow(1)"><a class="icon icon-shop" href="#">Виробництво</a></li>
-                <li onclick="slideShow(2)"><a class="icon icon-data" href="#">Результат періоду</a></li>
-                <li onclick="slideShow(3)"><a class="icon icon-wallet" href="#">Баланс</a></li>
-                <li onclick="slideShow(4)"><a class="icon icon-banknote" href="#">Банк</a></li>
-                <li onclick="slideShow(5)"><a class="icon icon-lab" href="#">Технічні розробки</a></li>
-                <li onclick="slideShow(6)"><a class="icon icon-tag" href="#">Аналіз попиту</a></li>
-                <!-- <li><a class="icon icon-" href="#">Credits</a></li> -->
-                <li onclick="slideShow(7)"><a class="icon icon-news" href="#">Новини</a></li>
-                <li onclick="slideShow(8)"><a class="icon icon-eye" href="#">Параметри країни</a></li>
-                <li onclick="slideShow(9)"><a class="icon icon-food" href="#">Параметри періоду</a></li>
-            </ul>
-        </nav>
-        <div class="st-pusher">
-
-            <!-- <nav class="st-menu st-effect-3" id="menu-3">
+                <ul>
+                    <li onclick="slideShow(1)"><a class="icon icon-shop" href="#">Виробництво</a></li>
+                    <li onclick="slideShow(2)"><a class="icon icon-data" href="#">Результат періоду</a></li>
+                    <li onclick="slideShow(3)"><a class="icon icon-wallet" href="#">Баланс</a></li>
+                    <li onclick="slideShow(4)"><a class="icon icon-banknote" href="#">Банк</a></li>
+                    <li onclick="slideShow(5)"><a class="icon icon-lab" href="#">Технічні розробки</a></li>
+                    <li onclick="slideShow(6)"><a class="icon icon-tag" href="#">Аналіз попиту</a></li>
+                    <!-- <li><a class="icon icon-" href="#">Credits</a></li> -->
+                    <li onclick="slideShow(7)"><a class="icon icon-news" href="#">Новини</a></li>
+                    <li onclick="slideShow(8)"><a class="icon icon-eye" href="#">Параметри країни</a></li>
+                    <li onclick="slideShow(9)"><a class="icon icon-food" href="#">Параметри періоду</a></li>
+                </ul>
+            </nav>
+            <div class="st-pusher">
+                <!-- <nav class="st-menu st-effect-3" id="menu-3">
                 <h2 class="icon icon-lab">Sidebar</h2>
                 <ul>
                     <li><a class="icon icon-data" href="#">Data Management</a></li>
@@ -95,126 +92,135 @@
                     <li><a class="icon icon-wallet" href="#">Credits</a></li>
                 </ul>
             </nav> -->
-            <div class="st-content">
-                <div class="st-content-inner">
-                    <header class="codrops-header">
-                    </header>
-                    <div class="main clearfix">
-                       
+                <div class="st-content">
+                    <div class="st-content-inner">
+                        <header class="codrops-header">
+                        </header>
+                        <div class="main clearfix">
                             <div id="ultraContainer">
-                            	
-                           
-                            <div id="global">
-                                <div class="topNavBar">
-                                 <div id="st-trigger-effects" class="column">
-                           
-                             <button data-effect="st-effect-1" class="icon icon-tag" id='sliderButton'></button>
-                                    <p>mece</p>
+                                <div id="global">
+                                    <div class="topNavBar">
+                                        <div id="st-trigger-effects" class="column">
+                                            <button data-effect="st-effect-1" class="icon icon-tag" id='sliderButton'></button>
+                                            <p>mece</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div id="playerCreate">
-                                    <div class="playerList">
-                                        <!-- <div class="oneOfPlayer" id='s1'>
+                                    <div id="playerCreate">
+                                        <div class="playerList">
+                                            <!-- <div class="oneOfPlayer" id='s1'>
 					<p>Player Name 1</p>
 					<form action="">
 						<input id='a1' value='name' type="text">
 					</form>
 				</div> -->
+                                        </div>
+                                        <button class="btn btn-primary" onclick="addNewPlayer()">Add+</button>
+                                        <button class="btn btn-primary" onclick="nextStep()">Submite</button>
                                     </div>
-                                    <button class="btn btn-primary" onclick="addNewPlayer()">Add+</button>
-                                    <button class="btn btn-primary" onclick="nextStep()">Submite</button>
-                                </div>
-                                <div id="gameParameter">
-                                    <div>
-                                        <p>Starting parameter</p>
+                                    <div id="gameParameter">
+                                        <div>
+                                            <p>Starting parameter</p>
+                                        </div>
+                                        <div class="gParam">
+                                            <p>industry rise</p>
+                                            <form action="">
+                                                <input value='3' id="industryInNextPeriod" type="text">
+                                            </form>
+                                        </div>
+                                        <div class="gParam">
+                                            <p>Tax level</p>
+                                            <form action="">
+                                                <input value='25' id="TaxLevel" type="text">
+                                            </form>
+                                        </div>
+                                        <div class="gParam">
+                                            <p>Max sales</p>
+                                            <form action="">
+                                                <input value='2000' id="supply" type="text">
+                                            </form>
+                                        </div>
+                                        <div class="gParam">
+                                            <p>Bank Percent</p>
+                                            <form action="">
+                                                <input value='20' id="bankPercent" type="text">
+                                            </form>
+                                        </div>
+                                        <div class="gParam">
+                                            <p>Product per player</p>
+                                            <form action="">
+                                                <input value='1000' id="productPerPlayer" type="text">
+                                            </form>
+                                        </div>
+                                        <div class="gParam">
+                                            <p>Credit Line</p>
+                                            <form action="">
+                                                <input value='50000' id="creditLine" type="text">
+                                            </form>
+                                        </div>
+                                        <button id='goButton' class="btn btn-info col-xs-6" onclick="goButton()" style='margin-left:25%;'>go!</button>
                                     </div>
-                                    <div class="gParam">
-                                        <p>industry rise</p>
-                                        <form action="">
-                                            <input value='3' id="industryInNextPeriod" type="text">
-                                        </form>
-                                    </div>
-                                    <div class="gParam">
-                                        <p>Tax level</p>
-                                        <form action="">
-                                            <input value='25' id="TaxLevel" type="text">
-                                        </form>
-                                    </div>
-                                    <div class="gParam">
-                                        <p>Max sales</p>
-                                        <form action="">
-                                            <input value='2000' id="supply" type="text">
-                                        </form>
-                                    </div>
-                                    <div class="gParam">
-                                        <p>Bank Percent</p>
-                                        <form action="">
-                                            <input value='20' id="bankPercent" type="text">
-                                        </form>
-                                    </div>
-                                    <div class="gParam">
-                                        <p>Product per player</p>
-                                        <form action="">
-                                            <input value='1000' id="productPerPlayer" type="text">
-                                        </form>
-                                    </div>
-                                    <div class="gParam">
-                                        <p>Credit Line</p>
-                                        <form action="">
-                                            <input value='50000' id="creditLine" type="text">
-                                        </form>
-                                    </div>
-                                    <button id='goButton' class="btn btn-info col-xs-6" onclick="goButton()" style='margin-left:25%;'>go!</button>
-                                </div>
-
-
-
-
-
-                                <div id="playPeriod">
-                                    <!-- <div class="playerNow">
+                                    <div id="playPeriod">
+                                        <!-- <div class="playerNow">
                                        
                                     </div> -->
-                                    <div id="tab-container" class="tab-container">
-                                        
-                                        <div id="tabs1">
-                                            <div class="navyHead">
-                                                <p>Operation Reports</p>
+                                        <div id="tab-container" class="tab-container">
+                                            <div id="tabs1">
+                                                <div class="logicsBlocks">
+                                                    <a class="thumbnail">
+                                                        <img src="src/img/factoryPart.jpg" alt="...">
+                                                    </a>
+                                                </div>
+                                            
+                                            <div class="logicsBlocks">
+                                                <div class="navyHead">
+                                                    <p>Operation Reports</p>
+                                                </div>
+                                                <div class="company">
+                                                    <p>Factory Capacity: <strong id="industryPlayer">##</strong></p>
+                                                    <p>Capital Utilization: <strong id="bankBalances">100%</strong></p>
+                                                    <p>Production Cost/Unit: <strong id="PPU">##</strong></p>
+                                                    <p>Inventory: <strong id="productSalent">##</strong></p>
+                                                </div>
                                             </div>
-                                            <div class="company">
-                                                <p>Factory Capacity: <strong id="industryPlayer">##</strong></p>
-                                                <p>Capital Utilization: <strong id="bankBalances">100%</strong></p>
-                                                <p>Production Cost/Unit: <strong id="PPU">##</strong></p>
-                                                <p>Inventory: <strong id="productSalent">##</strong></p>
+                                            <div class="logicsBlocks">
+                                                <div class="navyHead">
+                                                    <p>Operation Reports</p>
+                                                </div>
+                                                <div class="company">
+                                                    <p>Orders Received: <strong id="orderReceived">##</strong></p>
+                                                    <p>Sales Made: <strong id="playerSales">##</strong></p>
+                                                    <p>Unfilled Orders: <strong id="UO">##</strong></p>
+                                                    <p>Price/Unit Sold: <strong id="PUS">##</strong></p>
+                                                    <p>Total Cost/Unit Sold: <strong id="TCUS">##</strong></p>
+                                                    <p>Margin/Unit Sold: <strong id="MUS">##</strong></p>
+                                                </div>
                                             </div>
-                                            <div class="navyHead">
-                                                <p>Operation Reports</p>
-                                            </div>
-                                            <div class="company">
-                                                <p>Orders Received: <strong id="orderReceived">##</strong></p>
-                                                <p>Sales Made: <strong id="playerSales">##</strong></p>
-                                                <p>Unfilled Orders: <strong id="UO">##</strong></p>
-                                                <p>Price/Unit Sold: <strong id="PUS">##</strong></p>
-                                                <p>Total Cost/Unit Sold: <strong id="TCUS">##</strong></p>
-                                                <p>Margin/Unit Sold: <strong id="MUS">##</strong></p>
-                                            </div>
-                                            <div class="navyHead">
-                                                <p>Income Statement</p>
-                                            </div>
-                                            <div class="company">
-                                                <p>Sales: <strong id="sales">##</strong></p>
-                                                <!--  <p>COGS: <strong id="cogs">##</strong></p> -->
-                                                <p>Marketing: <strong id="marketing">##</strong></p>
-                                                <p>Depresation: <strong id="depresation">##</strong></p>
-                                                <p>R and G: <strong id="quality">##</strong></p>
-                                                <!-- <p>Inventory Change: <strong id="income">##</strong></p> -->
-                                                <!-- <p>Interest: <strong id="income">##</strong></p> -->
-                                                <p>Profit before Tax: <strong id="PBT">##</strong></p>
-                                                <p>Tax: <strong id="tax">##</strong></p>
-                                                <p>Net Profit: <strong id="income">##</strong></p>
+                                            <div class="logicsBlocks">
+                                                <div class="navyHead">
+                                                    <p>Income Statement</p>
+                                                </div>
+                                                <div class="company">
+                                                    <p>Sales: <strong id="sales">##</strong></p>
+                                                    <!--  <p>COGS: <strong id="cogs">##</strong></p> -->
+                                                    <p>Marketing: <strong id="marketing">##</strong></p>
+                                                    <p>Depresation: <strong id="depresation">##</strong></p>
+                                                    <p>R and G: <strong id="quality">##</strong></p>
+                                                    <!-- <p>Inventory Change: <strong id="income">##</strong></p> -->
+                                                    <!-- <p>Interest: <strong id="income">##</strong></p> -->
+                                                    <p>Profit before Tax: <strong id="PBT">##</strong></p>
+                                                    <p>Tax: <strong id="tax">##</strong></p>
+                                                    <p>Net Profit: <strong id="income">##</strong></p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div id="tabs2">
+                                    </div>
+                                    <div id="tabs2">
+                                    <div class="logicsBlocks">
+                                                    <a class="thumbnail">
+                                                        <img src="src/img/incomePart.jpg" alt="...">
+                                                    </a>
+                                                </div>
+                                        <div class="logicsBlocks">
                                             <div class="navyHead">
                                                 <p>Industry</p>
                                             </div>
@@ -229,7 +235,14 @@
                                                 <p>Total quality investment: <strong id="TQI">##</strong></p>
                                             </div>
                                         </div>
-                                        <div id="tabs3">
+                                    </div>
+                                    <div id="tabs3">
+                                    <div class="logicsBlocks">
+                                                    <a class="thumbnail">
+                                                        <img src="src/img/balanecPart.jpg" alt="...">
+                                                    </a>
+                                                </div>
+                                        <div class="logicsBlocks">
                                             <div class="navyHead">
                                                 <p>Balance Sheet</p>
                                             </div>
@@ -239,7 +252,14 @@
                                                 <p>Total Assets: <strong id="TA">##</strong></p>
                                             </div>
                                         </div>
-                                        <div id="tabs4">
+                                    </div>
+                                    <div id="tabs4">
+                                    <div class="logicsBlocks">
+                                                    <a class="thumbnail">
+                                                        <img src="src/img/bankPart.jpg" alt="...">
+                                                    </a>
+                                                </div>
+                                        <div class="logicsBlocks">
                                             <div class="navyHead">
                                                 <p>Bank</p>
                                             </div>
@@ -248,15 +268,37 @@
                                                 <p>Bank percent: <strong id="bankPercentG">#</strong></p>
                                             </div>
                                         </div>
-                                        <div id="tabs5">
-                                        </div>
-                                        <div id="tabs6">
-                                        </div>
-                                        <div id="tabs7">
-                                        </div>
-                                        <div id="tabs8">
-                                        </div>
-                                        <div id="tabs9">
+                                    </div>
+                                    <div id="tabs5">
+                                    <div class="logicsBlocks">
+                                                    <a class="thumbnail">
+                                                        <img src="src/img/technologyPart.jpg" alt="...">
+                                                    </a>
+                                                </div>
+                                    </div>
+                                    <div id="tabs6">
+                                    <div class="logicsBlocks">
+                                                    <a class="thumbnail">
+                                                        <img src="src/img/MenuImg.jpg" alt="...">
+                                                    </a>
+                                                </div>
+                                    </div>
+                                    <div id="tabs7">
+                                    <div class="logicsBlocks">
+                                                    <a class="thumbnail">
+                                                        <img src="src/img/mapsPart.jpg" alt="...">
+                                                    </a>
+                                                </div>
+                                    </div>
+                                    <div id="tabs8">
+                                    <div class="logicsBlocks">
+                                                    <a class="thumbnail">
+                                                        <img src="src/img/factoryPart.jpg" alt="...">
+                                                    </a>
+                                                </div>
+                                    </div>
+                                    <div id="tabs9">
+                                        <div class="logicsBlocks">
                                             <div id="redHead">
                                                 <p>Your parameter</p>
                                             </div>
@@ -283,33 +325,35 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="navyHead" style="display:none;">
-                                        <p>Game parameter</p>
-                                    </div>
-                                    <div class="prediction" style="display:none;">
-                                        <!-- <p>sensetive <strong id="sensetive"> ## </strong> </p> -->
-                                        <!-- //factory size -->
-                                        <!-- <p>industry sales</p> -->
-                                        <!-- <h3>company report</h3> -->
-                                    </div>
-                                    </div>
-                                
+                                </div>
+                                <!-- <div class="logicsBlocks">
+                                    </div> -->
+                            </div>
+                            <div class="navyHead" style="display:none;">
+                                <p>Game parameter</p>
+                                <div class="prediction" style="display:none;">
+                                    <!-- <p>sensetive <strong id="sensetive"> ## </strong> </p> -->
+                                    <!-- //factory size -->
+                                    <!-- <p>industry sales</p> -->
+                                    <!-- <h3>company report</h3> -->
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-                            </div>
         </div>
-        <script src="js/classie.js"></script>
-        <script src="js/sidebarEffects.js"></script>
-        <script src="js/dataBase.js"></script>
-        <script src="js/playerCreate.js"></script>
-        <script src="js/calculatingPart.js"></script>
-        <script src='js/mece.js'></script>
-        <script src="js/testing.js"></script>
-        <script src='js/sliderChanger.js'></script>
-        <!-- <script type="text/javascript" src="js/jquery.easytabs.min.js"></script> -->
+    </div>
+    </div>
+    <script src="js/classie.js"></script>
+    <script src="js/sidebarEffects.js"></script>
+    <script src="js/dataBase.js"></script>
+    <script src="js/playerCreate.js"></script>
+    <script src="js/calculatingPart.js"></script>
+    <script src='js/mece.js'></script>
+    <script src="js/testing.js"></script>
+    <script src='js/sliderChanger.js'></script>
+    <!-- <script type="text/javascript" src="js/jquery.easytabs.min.js"></script> -->
 </body>
 
 </html>

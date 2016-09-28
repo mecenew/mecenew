@@ -22,36 +22,50 @@ function goButton() {
     gameParameter.bankPercent = +$('#bankPercent')[0].value;
     gameParameter.creditLine = +$('#creditLine')[0].value;
     var tempIndustryPower = +$('#productPerPlayer')[0].value;
+
+
+
     for (var i = 1; i <= playerOnScreen; i++) {
         playerList.push({
-            name: $('#a' + i)[0].value
-            , industryPower: +$('#productPerPlayer')[0].value
-            , marketing: 100
-            , quality: 100
-            , balance: 0
-            , price: 30
-            , deprecation: +$('#productPerPlayer')[0].value * 2
-            , buferProduct: 0
-            , pointsPerPeriod: 0
-            , salesPerPeriod: 0
-            , income: 0
-            , maxSales: 0
-            , PUS: 0
-            , TCUS: 0
-            , MUS: 0
-            , capitalInvestment: 0
-            , totalAssets: 0
-            , orderReceived: 0
-            , cogs: 0
-            , grossMargin: 0
-            , tax: 0
-            , profitBeforeTax: 0
-            , credit: 0
-            , pricePerProduct: 18
-            , lose: 0
-        , });
+                name: $('#a' + i)[0].value,
+                industryPower: +$('#productPerPlayer')[0].value,
+                marketing: 100,
+                quality: 100,
+                balance: 0,
+                price: 45,
+                deprecation: +$('#productPerPlayer')[0].value * 2,
+                buferProduct: 0,
+                pointsPerPeriod: 0,
+                salesPerPeriod: 0,
+                income: 0,
+                maxSales: 0,
+                PUS: 0,
+                TCUS: 0,
+                MUS: 0,
+                capitalInvestment: 0,
+                totalAssets: 0,
+                orderReceived: 0,
+                cogs: 0,
+                grossMargin: 0,
+                tax: 0,
+                profitBeforeTax: 0,
+                credit: 0,
+                pricePerProduct: 18,
+                lose: 0,
+                technologyActivated: {
+                    rawPrice: 0,
+                    productionPrice: 0,
+                    laborPrice: 0,
+                    maxFactorySize: 0,
+                    employerPerProduct: 0,
+                },
+                employerNow: 0,
+                
+            
+        });
 
-    }
-    setFormValue();
-    tak();
+}
+setFormValue();
+// console.log(playerList);
+tak();
 }
